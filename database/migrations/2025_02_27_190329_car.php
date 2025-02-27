@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('model');
             $table->string('resgistration_number');
-            $table->timestamp('model_year')->nullable();
+            $table->timestamp('model_year');
+            $table->string('status');
             $table->timestamps();
         });
     }
